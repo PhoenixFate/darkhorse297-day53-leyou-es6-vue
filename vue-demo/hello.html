@@ -8,8 +8,10 @@
 </head>
 <body>
 <div id="app">
+    <input type="text" v-model="number"><button @click="number++">+</button>
     <h1>
-        {{name}}从入门到入坟
+        {{name}}从入门到入坟<br>
+        {{number}}
     </h1>
 </div>
 <script>
@@ -17,7 +19,8 @@
         //el:element
         el:"#app",
         data:{
-            name:"java"
+            name:"java",
+            number:4,
         }
     })
 </script>
